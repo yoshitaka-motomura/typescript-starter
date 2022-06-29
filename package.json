@@ -5,12 +5,14 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "serve": "nodemon --watch 'src/**/*.ts' --exec 'ts-node src/index.ts'",
+    "watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node src/index.ts'",
     "build": "tsc -p .",
     "lint": "eslint src/**/*.ts",
     "lint:prettier": "prettier --write 'src/**/*.ts'",
     "lint:fix": "run-s lint lint:prettier",
-    "readme": "npx readme-md-generator -y"
+    "docs:server": "http-server ./docs -p 3333",
+    "docs:build": "typedoc src/**/*.ts --out docs/",
+    "docs": "run-s docs:build docs:server"
   },
   "keywords": [
     "typescript"
@@ -32,6 +34,7 @@
     "@typescript-eslint/parser": "^5.30.0",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
+    "http-server": "^14.1.1",
     "jest": "^28.1.2",
     "nodemon": "^2.0.18",
     "prettier": "^2.7.1",
@@ -41,6 +44,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.1",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "typedoc": "^0.23.2"
   }
 }

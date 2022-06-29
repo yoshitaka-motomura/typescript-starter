@@ -16,14 +16,26 @@
 
 👤 **yoshitaka-motomura**
 
-
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/yoshitaka-motomura/typescript-starter/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/yoshitaka-motomura/typescript-starter/issues).
+
+## commands
+
+- `test` jest unittest runs
+- `watch` hot reload development mode
+- `build` compile to dist/
+- `lint` eslint checks
+- `lint:prettier` prettier rewriteing
+- `lint:fix` eslint & prettier
+- `docs:server` http-server ignite
+- `docs:build` generate docs/ by typedoc
+- `docs` docs:server & docs:build
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
