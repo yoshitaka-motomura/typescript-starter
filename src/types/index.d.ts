@@ -1,4 +1,4 @@
-export type Greeing = {
+export type Greeting = {
   message: string
   name?: string
 }
