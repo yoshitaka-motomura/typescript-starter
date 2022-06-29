@@ -1,7 +1,7 @@
-import { example } from '../src/libs'
+import { greeting, greetingFunc } from '../src/index'
 
-describe('first', () => {
+describe('first example test', () => {
   it('should return first', () => {
-    expect(example).toBe('example')
+    expect(greetingFunc(greeting)).toBe('hello Mike')
   })
 })
